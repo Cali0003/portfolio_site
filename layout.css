@@ -1,0 +1,32 @@
+/**************** forside mobile ******************/
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Tekst ovenpå hinanden */
+  justify-content: center; /* Vertikal centrering */
+  align-items: center; /* Horisontal centrering */
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+main h1,
+main h2 {
+  position: absolute; /* stadig ovenpå billedet */
+  margin: 0;
+}
+
+main h1 {
+  top: 50%; /* Justér hvor højt teksten skal ligge */
+  font-size: 9rem;
+  color: var(--neon);
+}
+
+main h2 {
+  top: 70%; /* Justér anden linje under h1 */
+  font-size: 2rem;
+  color: var(--light-grey);
+}

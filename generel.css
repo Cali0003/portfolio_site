@@ -1,0 +1,224 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************ Farver **************/
+html {
+  --dark-grey: #2c2c2c;
+  --light-grey: #a3a398;
+  --creme: #d0cfc4;
+  --red: #861627;
+  --neon: #deff35;
+}
+/************ Fonts **************/
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.cabin {
+  font-family: "Cabin", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*********** h1 h2 h3 p ************/
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 17rem;
+  font-weight: 100;
+  color: var(--neon);
+}
+
+h2,
+h3 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 100;
+}
+h2 {
+  font-size: 4rem;
+  color: var(--light-grey);
+}
+h3 {
+  font-size: 1.6rem;
+}
+p {
+  font-family: Helvetica, sans-serif;
+  /* transform: scaleX(0.8); */
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/**************** Baggrundsfarve ******************/
+body {
+  background-color: var(--creme);
+}
+
+/**************** Menu desktop ******************/
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-style: none;
+  margin-left: 20px;
+}
+
+.logo svg {
+  color: var(--neon);
+  width: 120px;
+  height: auto;
+  padding: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0; /* sidder i toppen af viewport */
+  z-index: 1000; /* sørger for, at den ligger ovenpå alt andet indhold */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-grey);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  color: var(--neon);
+  font-family: "Coiny", system-ui;
+}
+
+.menu a:hover {
+  color: var(--creme);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+  .menu {
+    display: none;
+  }
+}
+
+/**************** Menu burger menu ******************/
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 20px;
+  background-color: var(--neon);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 840px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    margin-right: 10px;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--dark-grey);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+    border: none;
+  }
+}
+
+main img {
+  width: 450px;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 840px) {
+  main img {
+    width: 800px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/**************** Footer ******************/
+.icon-tabler {
+  color: var(--neon);
+}
+
+footer {
+  background-color: var(--dark-grey);
+
+  padding: 100px;
+}
