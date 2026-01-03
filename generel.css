@@ -33,36 +33,60 @@ html {
   font-variation-settings: "wdth" 100;
 }
 
+.bowlby-one-regular {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
 /*********** h1 h2 h3 p ************/
 h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 17rem;
+  font-size: 6.5rem;
   font-weight: 100;
-  color: var(--neon);
+  color: var(--dark-grey);
+  text-align: center;
 }
 
-h2,
-h3 {
-  font-family: "Cabin", sans-serif;
-  font-weight: 100;
-}
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+  font-family: "Cabin", sans-serif;
   color: var(--light-grey);
 }
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-family: "Bowlby One", sans-serif;
+  color: var(--neon);
 }
+
+h4 {
+  font-size: 1.2rem;
+  font-family: "Cabin", sans-serif;
+  color: var(--dark-grey);
+}
+
 p {
-  font-family: Helvetica, sans-serif;
-  /* transform: scaleX(0.8); */
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
+  color: var(--dark-grey);
 }
 
 /**************** Baggrundsfarve ******************/
 body {
   background-color: var(--creme);
+}
+
+/**************** gap i siderne ******************/
+
+.gap {
+  margin: 0;
+  padding: 2rem;
 }
 
 /**************** Menu desktop ******************/
@@ -116,7 +140,7 @@ header {
   border-radius: 15px;
   font-size: 1.1rem;
   color: var(--neon);
-  font-family: "Coiny", system-ui;
+  font-family: "Bowlby One", sans-serif;
 }
 
 .menu a:hover {
@@ -130,7 +154,7 @@ header {
   }
 }
 
-/**************** Menu burger menu ******************/
+/**************** Menu burger ******************/
 
 .burger {
   width: 30px;
@@ -196,29 +220,39 @@ header {
   }
 }
 
-main img {
+/* main img {
   width: 450px;
   height: auto;
   align-items: center;
   text-align: center;
-}
+} */
 
 @media screen and (min-width: 840px) {
   main img {
-    width: 800px;
+    width: 700px;
     height: auto;
     align-items: center;
     text-align: center;
   }
 }
 
+/**************** Video ******************/
+.gif {
+  display: block; /* vigtig for margin auto */
+  width: 300px; /* eller procent, fx 50% */
+  height: auto; /* bevarer proportioner */
+  margin: 0 auto; /* centrerer horisontalt */
+}
+
 /**************** Footer ******************/
 .icon-tabler {
   color: var(--neon);
+  width: 50px;
+  height: 50px;
 }
 
 footer {
   background-color: var(--dark-grey);
-
-  padding: 100px;
+  text-align: center;
+  padding: 50px;
 }

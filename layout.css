@@ -1,32 +1,111 @@
 /**************** forside mobile ******************/
 
-main {
-  position: relative;
+/* HERO – MOBIL */
+
+#hero {
+  position: relative; /* Reference til absolute tekst */
   display: flex;
-  flex-direction: column; /* Tekst ovenpå hinanden */
-  justify-content: center; /* Vertikal centrering */
-  align-items: center; /* Horisontal centrering */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-main img {
+/* Billede */
+#hero img {
   width: 100%;
   height: auto;
+  display: block;
+  margin-top: 2rem;
 }
 
-main h1,
-main h2 {
-  position: absolute; /* stadig ovenpå billedet */
+/* Tekst wrapper */
+.hero-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Overskrift */
+#hero h1 {
   margin: 0;
-}
-
-main h1 {
-  top: 50%; /* Justér hvor højt teksten skal ligge */
-  font-size: 9rem;
+  font-size: 8rem;
   color: var(--neon);
+  line-height: 1;
 }
 
-main h2 {
-  top: 70%; /* Justér anden linje under h1 */
+/* Underoverskrift */
+#hero h2 {
+  margin: 0;
   font-size: 2rem;
   color: var(--light-grey);
+}
+
+@media (min-width: 840px) {
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  #hero img {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text {
+    position: static; /* fjerner absolute */
+    transform: none; /* fjerner oversættelse */
+    grid-column: 2;
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: -6rem;
+  }
+
+  #hero h1 {
+    font-size: 14rem;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+    margin-top: -2rem;
+  }
+}
+
+/**************** Om mig ******************/
+.kompetencer {
+  text-align: center;
+}
+
+/**************** Projekter ******************/
+
+.pil {
+  display: block;
+  margin: 0 auto;
+}
+
+.hover_img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 840px) {
+  .projekter_web_grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .projekter_web_grid_1-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
 }

@@ -1,0 +1,17 @@
+/**************** Forside******************/
+
+/**************** Om mig ******************/
+
+/**************** Projekter ******************/
+
+.hover_img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  filter: grayscale(100%) brightness(90%);
+  transition: all 0.5s ease;
+}
+
+.hover_img:hover {
+  filter: grayscale(0%);
+}
