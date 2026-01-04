@@ -54,9 +54,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: "Cabin", sans-serif;
-  color: var(--light-grey);
+  color: var(--dark-grey);
 }
 h3 {
   font-size: 1.4rem;
@@ -87,6 +87,14 @@ body {
 .gap {
   margin: 0;
   padding: 2rem;
+}
+
+@media (min-width: 840px) {
+  .gap {
+    padding: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
 /**************** Menu desktop ******************/

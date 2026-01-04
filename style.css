@@ -1,7 +1,12 @@
 /**************** Forside******************/
+.forside_link {
+  color: var(--neon);
+}
 
 /**************** Om mig ******************/
-
+.om_mig_h1 {
+  font-size: 6rem;
+}
 /**************** Projekter ******************/
 
 .hover_img {
@@ -10,8 +15,62 @@
   border-radius: 20px;
   filter: grayscale(100%) brightness(90%);
   transition: all 0.5s ease;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  border: 2px solid var(--neon);
 }
 
 .hover_img:hover {
   filter: grayscale(0%);
 }
+
+.knap_projekter {
+  display: inline-block; /* Gør linket til en "knap" */
+  font-family: "Bowlby One", sans-serif;
+  background-color: var(--creme);
+  color: var(--neon);
+  border: 2px solid var(--dark-grey);
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.knap_projekter:hover {
+  background-color: var(--neon);
+  color: var(--dark-grey);
+}
+
+.projekt {
+  text-align: center;
+}
+
+/**************** Tema generelt ******************/
+.tema {
+  border-radius: 20px;
+}
+
+.knap_link {
+  display: inline-block; /* Gør linket til en "knap" */
+  font-family: "Bowlby One", sans-serif;
+  background-color: var(--neon);
+  color: var(--dark-grey);
+  border: 2px solid var(--dark-grey);
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.knap_link:hover {
+  background-color: var(--dark-grey);
+  color: var(--neon);
+}
+
+/**************** Tema 2 ******************/
+
+/**************** Tema 3 ******************/
+
+/**************** Tema 4 ******************/
+
+/**************** Tema 5 ******************/

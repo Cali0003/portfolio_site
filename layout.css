@@ -43,6 +43,11 @@
   margin: 0;
   font-size: 2rem;
   color: var(--light-grey);
+  margin-bottom: 30px;
+}
+
+.hero-text p {
+  margin-top: 30px;
 }
 
 @media (min-width: 840px) {
@@ -54,7 +59,7 @@
 
   #hero img {
     grid-column: 1;
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
@@ -76,6 +81,17 @@
   #hero h2 {
     font-size: 2rem;
     margin-top: -2rem;
+    color: var(--light-grey);
+  }
+}
+
+.web_text {
+  display: none; /* fjerner på mobil */
+}
+
+@media (min-width: 840px) {
+  .web_text {
+    display: block;
   }
 }
 
@@ -104,8 +120,20 @@
   }
 
   .projekter_web_grid_1-1 img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 20px;
   }
+
+  .center_p {
+    text-align: center;
+  }
 }
+
+/**************** Tema 2 ******************/
+
+/**************** Tema 3 ******************/
+
+/**************** Tema 4 ******************/
+
+/**************** Tema 5 ******************/
