@@ -5,8 +5,25 @@
 
 /**************** Om mig ******************/
 .om_mig_h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
+.om_mig_p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.kompetencer h3 {
+  color: var(--dark-grey);
+  font-size: 1rem;
+}
+
+@media (min-width: 840px) {
+  .om_mig_h1 {
+    font-size: 9rem;
+    text-align: left;
+  }
+}
+
 /**************** Projekter ******************/
 
 .hover_img {
@@ -27,8 +44,8 @@
 .knap_projekter {
   display: inline-block; /* Gør linket til en "knap" */
   font-family: "Bowlby One", sans-serif;
-  background-color: var(--creme);
-  color: var(--neon);
+  background-color: var(--neon);
+  color: var(--dark-grey);
   border: 2px solid var(--dark-grey);
   border-radius: 20px;
   padding: 10px 20px;
@@ -37,17 +54,35 @@
 }
 
 .knap_projekter:hover {
-  background-color: var(--neon);
-  color: var(--dark-grey);
+  background-color: var(--dark-grey);
+  color: var(--neon);
 }
 
 .projekt {
   text-align: center;
 }
+@media (min-width: 840px) {
+  .projekter_h1_web {
+    font-size: 16rem;
+  }
+}
 
 /**************** Tema generelt ******************/
 .tema {
   border-radius: 20px;
+  max-width: 100%;
+}
+
+.tema_h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 840px) {
+  .tema_h1 {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+  }
 }
 
 .knap_link {
