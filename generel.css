@@ -29,7 +29,6 @@ html {
   font-family: "Cabin", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
 .bowlby-one-regular {
@@ -54,7 +53,7 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
-  font-family: "Cabin", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: var(--dark-grey);
 }
 h3 {
@@ -65,7 +64,7 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
-  font-family: "Cabin", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: var(--dark-grey);
 }
 
