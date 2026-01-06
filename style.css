@@ -5,7 +5,7 @@
 
 /**************** Om mig ******************/
 .om_mig_h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .om_mig_p {
   margin-left: 20px;
@@ -57,6 +57,10 @@
   background-color: var(--dark-grey);
   color: var(--neon);
 }
+.projekter_h1_web {
+  font-size: 6rem;
+  text-align: center;
+}
 
 .projekt {
   text-align: center;
@@ -101,11 +105,3 @@
   background-color: var(--dark-grey);
   color: var(--neon);
 }
-
-/**************** Tema 2 ******************/
-
-/**************** Tema 3 ******************/
-
-/**************** Tema 4 ******************/
-
-/**************** Tema 5 ******************/
