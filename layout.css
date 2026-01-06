@@ -3,7 +3,7 @@
 /* HERO – MOBIL */
 
 #hero {
-  position: relative; /* Reference til absolute tekst */
+  position: relative; /* Reference til absolute tekst som kan ligge sig ovenpå */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* centrer h1 og h2 */
   display: flex;
   flex-direction: column;
   align-items: center;

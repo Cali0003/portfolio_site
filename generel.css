@@ -16,7 +16,6 @@ html {
   --dark-grey: #2c2c2c;
   --light-grey: #a3a398;
   --creme: #d0cfc4;
-  --red: #861627;
   --neon: #deff35;
 }
 /************ Fonts **************/
@@ -227,13 +226,6 @@ header {
     border: none;
   }
 }
-
-/* main img {
-  width: 450px;
-  height: auto;
-  align-items: center;
-  text-align: center;
-} */
 
 @media screen and (min-width: 840px) {
   main img {
